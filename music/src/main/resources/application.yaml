@@ -1,0 +1,5 @@
+spring:
+    datasource:
+        password: 100Gunter!
+        username: root
+        url: jdbc:mysql://3306/music
