@@ -7,22 +7,22 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
-import java.util.LinkedList;
+// import java.util.HashMap;
+// import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
+//import java.util.Map;
 
 import com.promineotech.music.music.Entities.Artists;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.jdbc.core.RowMapper;
+// import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Service;
 
-import lombok.extern.slf4j.Slf4j;
+//import lombok.extern.slf4j.Slf4j;
 
 //ArtistDAO complete with CRUD functions
-@Slf4j
+//@Slf4j
 @Service
 public class ArtistDAO {
     // @Autowired
@@ -62,11 +62,32 @@ public class ArtistDAO {
             
     //     });
     // }
+    // public List<Artists> findAllArtists(){    Better version?
+    //     String sql = "SELECT * FROM artists";
+    //     List<Artists> artists = jdbcTemplate.query(sql, 
+    //     new ArtistRowMapper());
 
+    //     return artists;
+    // }
+
+    // public class ArtistRowMapper implements RowMapper<Artists>{
+
+    //     @Override
+    //     public Artists mapRow(ResultSet rs, int rowNum) throws SQLException {
+    //        Artists artist = new Artists();
+    //        artist.setArtistID(rs.getInt("id"));
+    //        artist.setFirstName(rs.getString("first_name"));
+    //        artist.setLastName(rs.getString("last_name"));
+    //        artist.setAge(rs.getInt("age"));
+
+    //        return artist;
+    //     }
+
+    // }
 
     private static final String HOSTNAME = "jdbc:mysql://localhost:3306/music";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "Gunter100!";
+    private static final String PASSWORD = "100Gunter!";
 
     public static List<Artists> listAllArtists() {
         final String sql = "SELECT * FROM artists";

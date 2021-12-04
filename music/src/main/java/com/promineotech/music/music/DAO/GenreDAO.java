@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 public class GenreDAO {
     private static final String HOSTNAME = "jdbc:mysql://localhost:3306/music";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "Gunter100!";
+    private static final String PASSWORD = "100Gunter!";
 
     public static List<Genres> getGenres(){
         final String sql = "SELECT * FROM genres";
