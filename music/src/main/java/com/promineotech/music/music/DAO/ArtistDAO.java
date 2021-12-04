@@ -87,7 +87,7 @@ public class ArtistDAO {
 
     private static final String HOSTNAME = "jdbc:mysql://localhost:3306/music";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "100Gunter!";
+    private static final String PASSWORD = "123456P";
 
     public static List<Artists> listAllArtists() {
         final String sql = "SELECT * FROM artists";
