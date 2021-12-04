@@ -1,0 +1,32 @@
+use music;
+desc artists;
+
+INSERT into artists(first_name, last_name, age) VALUES ('Eminem', 'Mathers', 45);
+INSERT into artists(first_name, last_name, age) VALUES ('Mac', 'Miller', 26);
+
+SELECT * from artists;
+
+desc genres;
+INSERT into genres(genre_name) Values ('Rap');
+INSERT into genres(genre_name) Values ('Pop');
+
+SELECT * from genres;
+
+desc albums;
+INSERT into albums(album_name, artist_id, genre_id) VALUES ('The Eminem Show', 1, 1);
+INSERT into albums(album_name, artist_id, genre_id) VALUES ('Watching Movies', 2, 2);
+
+SELECT * from albums;
+
+desc tracks;
+INSERT into tracks(track_name, album_id) Values ('Without Me', 1);
+INSERT into tracks(track_name, album_id) Values ('Superman', 1);
+INSERT into tracks(track_name, album_id) Values ('Gees', 2);
+INSERT into tracks(track_name, album_id) Values ('S.D.S.', 2);
+
+SELECT * from tracks;
+
+desc album_sales;
+INSERT into album_sales(album_id, albums_sold) VALUES (1, 27000000);
+INSERT into album_sales(album_id, albums_sold) VALUES (2, 500000);
+
