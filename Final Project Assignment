@@ -1,0 +1,22 @@
+Week 5 Final Project Work
+Over the next two weeks, you will be working on building your own API. The API can be anything you want, as long as it doesn't violate any school policies. Your API must meet the following, minimum requirements:
+Contain at least 5 entities
+Contain all CRUD operations
+Contain at least 1 one-to-many relationship
+Contain at least 1 many-to-many relationship
+Contain different application layers including at least controller, service, and repository
+This week, please come up with an idea for your project and get it approved by your instructor as early as possible so you can start working on it. It is also recommended that you create a list of features that your API will have so you can work from that list. Below is an example.
+Library API Example:
+- User can register and login
+- Admin can promote user to admin
+- Admin can create books
+- Admin can delete books
+- Admin can update books
+- User can browse all books
+- User can browse books by genre
+- User can view all details about a specific book
+- Users can leave reviews on a book
+- User can check out x amount of books at a time (creates a checkout entity)
+- When a book is checked out a due date is set for 2 weeks from checkout date
+- User can return book
+- When a book is returned a fee is assessed on the users account if the book is past due
